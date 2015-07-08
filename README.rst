@@ -5,8 +5,11 @@ SubToMe plugin for Tiny Tiny RSS
 Allows users to register their `Tiny Tiny RSS`__ instance at `subtome.com`__.
 Once done, they can subscribe to feeds with only two clicks.
 
+Screenshots are available on the `introductory blog post`__.
+
 __ https://tt-rss.org/
 __ https://www.subtome.com/
+__ http://cweiske.de/tagebuch/tt-rss-subtome.htm
 
 
 =====
