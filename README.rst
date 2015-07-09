@@ -16,11 +16,8 @@ __ http://cweiske.de/tagebuch/tt-rss-subtome.htm
 Usage
 =====
 #. Go to Tiny Tiny RSS preferences.
-#. You'll see a new panel "SubToMe". Click on it.
-#. Click the "Add TT-RSS to SubToMe.com" button.
 
-   If you want, you can adjust the name before.
-
+That's it. Your Tiny Tiny RSS instance is registered at subtome.com now.
 
 ============
 Installation
@@ -30,10 +27,15 @@ TT-RSS folder::
 
     $ cd /path/to/tt-rss/
     $ cd plugins.local/
-    $ git clone git://git.cweiske.de/tt-rss-subtome.git
+    $ git clone git://git.cweiske.de/tt-rss-subtome.git subtome
 
 Then enable the plugin in the preferences.
 
+.. note:: To make it easy for everyone, enable the plugin for all
+          users by adding it to the ``PLUGINS`` configuration in
+          ``config.php``::
+
+            define('PLUGINS', 'auth_internal, note, subtome');
 
 =====
 About
