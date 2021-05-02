@@ -21,7 +21,7 @@ class SubToMe extends Plugin
             false
         );
     }
-    
+
     public function init($host)
     {
         $host->add_hook($host::HOOK_PREFS_TAB, $this);
@@ -36,7 +36,7 @@ class SubToMe extends Plugin
             . parse_url(get_self_url_prefix(), PHP_URL_HOST);
 
         $ttSubscribeUrl = get_self_url_prefix()
-            . '/public.php?op=subscribe&feed_url={url}';
+            . '/public.php?op=bookmarklets--subscribe&feed_url={url}';
         $regUrl = 'https://www.subtome.com/register-no-ui.html'
             . '?name=' . urlencode($name)
             . '&url=' . urlencode($ttSubscribeUrl);
